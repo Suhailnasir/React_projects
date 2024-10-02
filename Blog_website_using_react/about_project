@@ -1,0 +1,17 @@
+The project is a basic blog application built with React and utilizes React Router for navigation. Here's a description of its functionality:
+
+1. **Routing and Structure (App.js)**:
+   - The app includes a navigation bar and uses React Router for routing between different components like the home page, creating a blog, viewing blog details, and handling not-found routes. The main routes are:
+     - Home (`/`)
+     - Create a blog (`/create`)
+     - Blog details (`/blogs/:id`)
+     - Not-found (`*` for any unmatched routes)【7†source】.
+
+2. **Displaying Blog Details (BlogDetails.js)**:
+   - This component fetches and displays details of a specific blog based on the blog's ID from the URL.
+   - It provides a delete functionality that removes the blog and redirects the user back to the home page after deletion【8†source】.
+
+3. **Home Page (Home.js)**:
+   - The home page fetches a list of blogs from a local API (`http://localhost:8000/blogs`) and displays them using the `BlogList` component. It also handles loading states and potential errors during data fetching【9†source】.
+
+This is a full-stack project with client-side routing and interaction with a backend server for fetching and deleting blog data. The use of hooks like `useFetch` suggests custom hooks are being used for fetching data from the backend API.
